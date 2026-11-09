@@ -54,7 +54,7 @@
 
 (defn shuffle-factory
   []
-  (with-open [r (io/reader "resources/input")]
+  (with-open [r (io/reader "resources/slam_shuffle_input")]
     (loop [lines (line-seq r)
            cards (range 10007)]
       (if (empty? lines)
